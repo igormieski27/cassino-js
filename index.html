@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Cassino.js</title>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <h1> 🎰 Cassino.js 🎰</h1>
+    <p id="saldo">Saldo: R$ 1000</p>
+  </header>
+
+  <!-- Menu principal -->
+  <main>
+    <section id="opcoes-jogo">
+      <h2>Escolha uma opção de jogo:</h2>
+      <div id="botoes-jogo">
+        <button id="jogo-dado">🎲 Dado 🎲</button>
+        <button id="jogo-cartas">🃏 Cartas 🃏</button>
+      </div>
+    </section>
+
+    <!-- Tela de jogo do dado -->
+    <section id="tela-dado" class="tela-jogo">
+      <h2> 🎲 Jogo do Dado 🎲</h2>
+      <p>Escolha um número de 1 a 6 e faça sua aposta.</p>
+      <p>Vitória: 3x  Derrota: 0x</p>
+      <input type="text" id="numero-dado" placeholder="Número (1-6)">
+      <input type="text" id="valor-aposta-dado" placeholder="Valor da aposta">
+      <button id="jogar-dado">Jogar</button>
+    </section>
+
+    <!-- Tela de jogo de cartas -->
+    <section id="tela-cartas" class="tela-jogo">
+      <h2> 🃏 Jogo de Cartas 🃏</h2>
+      <p>Escolha uma carta de 1 a 13 e p naipe, e faça sua aposta.</p>
+      <p>Vitória: 10x Derrota: 0.5x</p>
+      <input type="text" id="numero-carta" placeholder="Número da carta (1-13)">
+      <!-- "Clube", "Espada", "Copas", "Paus" -->
+      <select id="naipe-carta">
+        <option value="1">♦️</option>
+        <option value="2">♠️</option>
+        <option value="3">♥ </option>
+        <option value="4">♣️ </option>
+      </select>
+      <input type="text" id="valor-aposta-carta" placeholder="Valor da aposta">
+      <button id="jogar-carta">Jogar</button>
+    </section>
+
+    <!-- Tela de resultado -->
+    <section id="tela-resultado" class="tela-jogo">
+      <h2 id="titulo-resultado">Resultado</h2>
+      <p id="conteudo-resultado"></p>
+      <button id="jogar-novamente">Jogar Novamente</button>
+    </section>
+
+    
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p style="color: white; font-size:small">Desenvolvido por Igor (https://github.com/igormieski27)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

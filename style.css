@@ -1,0 +1,97 @@
+/* Arquivo CSS */
+
+body {
+    background-image: url("https://img5.goodfon.com/wallpaper/nbig/e/68/karty-kazino-fokus.jpg") ;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  header p {
+    margin: 10px 0 0 0;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  }
+  
+  #opcoes-jogo {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #opcoes-jogo h2 {
+    margin-bottom: 10px;
+  }
+  
+  #botoes-jogo {
+    display: flex;
+    justify-content: center;
+  }
+  
+  button {
+    background-color: lightgray;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    margin: 0 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: gray;
+  }
+  
+  .tela-jogo {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 1.5em;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    width: 200px;
+    text-align: center;
+  }
+
+  .input-group {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  #startButton, #stopButton {
+    width: 150px;
+    margin-top: 20px;
+  }
+  
